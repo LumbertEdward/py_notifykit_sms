@@ -15,7 +15,7 @@ It abstracts away provider-specific SDKs and APIs, making it easy to switch prov
 - 🧩 Clean, provider-agnostic API
 - 🔁 Easy provider switching
 - ⚙️ Framework-friendly (FastAPI, Django, Flask)
-- 🚀 Designed for future channels (Email, WhatsApp, Push)
+- 🚀 Designed for future channels (Push)
 
 ---
 
