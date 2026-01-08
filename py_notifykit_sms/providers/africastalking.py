@@ -1,6 +1,6 @@
 import africastalking
-from notifykit.core import SMSProvider
-from notifykit.exceptions import ConfigurationError, SendError
+from py_notifykit_sms.core import SMSProvider
+from py_notifykit_sms.exceptions import ConfigurationError, SendError
 
 
 class AfricaTalkingSMSProvider(SMSProvider):

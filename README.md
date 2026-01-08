@@ -1,6 +1,6 @@
-# notifykit 📲
+# py_notifykit_sms 📲
 
-**notifykit** is a provider-agnostic Python notification toolkit that enables developers to send SMS (and other notifications) through a unified, extensible API.
+**py_notifykit_sms** is a provider-agnostic Python notification toolkit that enables developers to send SMS (and other notifications) through a unified, extensible API.
 
 It abstracts away provider-specific SDKs and APIs, making it easy to switch providers or add new notification channels without rewriting application logic.
 
@@ -22,7 +22,7 @@ It abstracts away provider-specific SDKs and APIs, making it easy to switch prov
 ## Installation
 
 ```bash
-pip install notifykit
+pip install py_notifykit_sms
 ```
 
 ---
@@ -34,7 +34,7 @@ pip install notifykit
 ---
 
 ```bash
-from notifykit.providers.africastalking import AfricaTalkingSMSProvider
+from py_notifykit_sms.providers.africastalking import AfricaTalkingSMSProvider
 
 sms = AfricaTalkingSMSProvider(
     username="your_username",
@@ -52,7 +52,7 @@ sms = AfricaTalkingSMSProvider(
 ```bash
 response = sms.send(
     recipients=["+254712345678"],
-    message="Hello! This message was sent using notifykit."
+    message="Hello! This message was sent using py_notifykit_sms."
 )
 ```
 
@@ -65,7 +65,7 @@ response = sms.send(
 ```bash
 response = sms.send_bulk([
         {
-            message="Bulk SMS via notifykit 🚀",
+            message="Bulk SMS via py_notifykit_sms 🚀",
             recepient="+254712345678"
         }
     ]
@@ -76,7 +76,7 @@ response = sms.send_bulk([
 
 ## Provider Response
 
-notifykit returns the raw provider response to allow flexibility, while standardizing error handling.
+py_notifykit_sms returns the raw provider response to allow flexibility, while standardizing error handling.
 
 ---
 
@@ -100,13 +100,13 @@ notifykit returns the raw provider response to allow flexibility, while standard
 
 ## Error Handling
 
-Provider-specific errors are translated into notifykit exceptions.
+Provider-specific errors are translated into py_notifykit_sms exceptions.
 
 ---
 
 ```bash
 
-from notifykit.exceptions import AuthenticationError, SendError
+from py_notifykit_sms.exceptions import AuthenticationError, SendError
 
 try:
     sms.send(...)
