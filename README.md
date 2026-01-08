@@ -41,6 +41,15 @@ sms = AfricaTalkingSMSProvider(
     api_key="your_api_key",
     sender_id="SENDER_ID"
 )
+
+from py_notifykit_sms.providers.smsleopard import SMSLeopardSMSProvider
+
+sms = SMSLeopardSMSProvider(
+    api_key="API_KEY",
+    api_secret="SECRET_KEY",
+    sender_id="TEST",
+)
+
 ```
 
 ---
@@ -126,3 +135,4 @@ except SendError as exc:
 ---
 
 ✅ Africa’s Talking
+✅ SMS Leopard

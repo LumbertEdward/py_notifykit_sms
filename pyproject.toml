@@ -21,7 +21,8 @@ keywords = [
     "messaging",
     "africastalking",
     "twilio",
-    "communication"
+    "communication",
+    "smsleopard"
 ]
 
 classifiers = [
@@ -38,7 +39,8 @@ classifiers = [
 ]
 
 dependencies = [
-    "africastalking>=2.0.1"
+    "africastalking>=2.0.1",
+    "requests>=2.32.0"
 ]
 
 [project.urls]

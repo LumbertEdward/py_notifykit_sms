@@ -30,3 +30,6 @@ class AfricaTalkingSMSProvider(SMSProvider):
             except Exception as exc:
                 responses.append({"recipient": msg["recipient"], "error": str(exc)})
         return responses
+    
+    
+    
